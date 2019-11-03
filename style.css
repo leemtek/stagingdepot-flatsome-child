@@ -1,0 +1,66 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+#logo img {
+  padding: 20px;
+}
+
+.stuck #logo img {
+  padding: 10px;
+}
+
+.sd-primary-color {
+  color: rgba(230,179,109);
+}
+
+.sd-primary-bg-color {
+  background-color: rgba(230,179,109);
+}
+
+/* Title Shadow */
+.sd-text-shadow-orange {
+  text-shadow: 2px 2px rgb(230,179,109, 0.4)
+}
+
+/* Generic Shadow */
+.sd-text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.99);
+}
+/* Bring header to higher z-index */
+.header, .header-wrapper {
+	z-index: 9999;
+}
+/* Fix for slider, it was breaking with the ezrentout plugin enabled */
+.slider-wrapper .slider {
+	display: block !important;
+	position: relative !important;
+}
+/* And also on the product pages */
+.product-thumbnails.slider {
+	display: unset;
+	position: unset;
+}
+.product-gallery-slider.slider {
+	display: block;
+	position: unset;
+}
+.flickity-slider {
+	display: flex;
+}
+.flickity-slider .col {
+	position: unset !important;
+}
+
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
